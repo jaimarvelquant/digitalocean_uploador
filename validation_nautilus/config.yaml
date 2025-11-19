@@ -1,0 +1,48 @@
+# DigitalOcean Spaces Configuration
+digital_ocean:
+  endpoint: "https://blr1.digitaloceanspaces.com"
+  region: "blr1"
+  spaces_key: "DO00CDX8Z7BFTQJ9W2AZ"
+  spaces_secret: "kR159s1x7Xjfd6RhVIyw8X34UGLIFKSzP7/0fG6Yt9I"
+  bucket_name: "historical-db-tick"
+
+# MySQL Database Configuration
+database:
+  host: "106.51.63.60"
+  port: 3306
+  username: "mahesh"
+  password: "mahesh_123"
+  database_name: "historicaldb"
+  charset: "utf8mb4"
+
+# Validation Configuration
+validation:
+  # Enable/disable validation types
+  row_count_validation: true
+  data_integrity_validation: true
+  full_data_comparison: false  # Resource intensive, use with caution
+  custom_validation_rules: true
+
+  # Performance settings
+  batch_size: 10000  # Number of rows to process at once
+  max_workers: 4     # Parallel processing workers
+  timeout: 300       # Query timeout in seconds
+
+  # Tolerance settings
+  row_count_tolerance: 0  # Allowable difference in row counts
+  null_value_tolerance: 0.01  # Allowable percentage difference in null values (0-1)
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "validation.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Reporting Configuration
+reporting:
+  output_directory: "reports"
+  format: ["json", "html"]  # json, html, csv
+  include_sample_data: true
+  sample_size: 10

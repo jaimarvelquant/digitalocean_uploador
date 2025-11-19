@@ -1,0 +1,647 @@
+2025-11-17 13:26:13,007 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:26:13,545 - nautilus_validation.connectors - INFO - Found 1000 Parquet files with prefix ''
+2025-11-17 13:33:00,515 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:33:00,597 - nautilus_validation.connectors - INFO - Found 20 Parquet files with prefix 'raw/parquet_data/futures/banknifty/2024/01/'
+2025-11-17 13:33:15,235 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:33:16,015 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:33:18,422 - nautilus_validation.connectors - INFO - Successfully connected to MySQL database: historicaldb
+2025-11-17 13:33:18,556 - nautilus_validation.connectors - INFO - Found 20 Parquet files with prefix 'raw/parquet_data/futures/banknifty/2024/01/'
+2025-11-17 13:33:18,930 - nautilus_validation.connectors - INFO - Database connection closed
+2025-11-17 13:33:18,930 - __main__ - ERROR - Unexpected error: Table 'banknifty_futures' does not exist in database
+Traceback (most recent call last):
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 390, in main
+    result = perform_validation(args, config)
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 247, in perform_validation
+    table_info = database_connector.get_table_info(args.table)
+  File "C:\validation_nautilus\nautilus_validation\connectors.py", line 259, in get_table_info
+    raise ValueError(f"Table '{table_name}' does not exist in database")
+ValueError: Table 'banknifty_futures' does not exist in database
+2025-11-17 13:36:24,599 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:36:25,263 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:36:27,134 - nautilus_validation.connectors - INFO - Successfully connected to MySQL database: historicaldb
+2025-11-17 13:36:27,285 - nautilus_validation.connectors - INFO - Found 20 Parquet files with prefix 'raw/parquet_data/futures/banknifty/2024/01/'
+2025-11-17 13:36:29,082 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet
+2025-11-17 13:36:30,055 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:30,059 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet
+2025-11-17 13:36:30,372 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:30,373 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet
+2025-11-17 13:36:30,671 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:30,672 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet
+2025-11-17 13:36:30,949 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:30,949 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet
+2025-11-17 13:36:31,248 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:31,249 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet
+2025-11-17 13:36:31,584 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:31,585 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet
+2025-11-17 13:36:31,934 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:31,934 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet
+2025-11-17 13:36:32,192 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:32,192 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet
+2025-11-17 13:36:32,439 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:32,440 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet
+2025-11-17 13:36:32,691 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:32,692 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet
+2025-11-17 13:36:32,946 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:32,947 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet
+2025-11-17 13:36:33,194 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:33,195 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet
+2025-11-17 13:36:33,628 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:33,629 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet
+2025-11-17 13:36:33,987 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:33,988 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet
+2025-11-17 13:36:34,292 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:34,292 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet
+2025-11-17 13:36:34,578 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:34,579 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet
+2025-11-17 13:36:34,904 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:34,905 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet
+2025-11-17 13:36:35,241 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:35,242 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet
+2025-11-17 13:36:35,544 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:35,545 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet
+2025-11-17 13:36:35,920 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:36:35,922 - nautilus_validation.connectors - INFO - Database connection closed
+2025-11-17 13:36:35,923 - __main__ - ERROR - Unexpected error: No Parquet data could be read
+Traceback (most recent call last):
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 390, in main
+    result = perform_validation(args, config)
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 297, in perform_validation
+    raise ValueError("No Parquet data could be read")
+ValueError: No Parquet data could be read
+2025-11-17 13:39:37,239 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:39:37,986 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:39:40,162 - nautilus_validation.connectors - INFO - Successfully connected to MySQL database: historicaldb
+2025-11-17 13:39:40,280 - nautilus_validation.connectors - INFO - Found 20 Parquet files with prefix 'raw/parquet_data/futures/banknifty/2024/01/'
+2025-11-17 13:39:41,518 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet
+2025-11-17 13:39:41,905 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:41,906 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet
+2025-11-17 13:39:42,141 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:42,141 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet
+2025-11-17 13:39:42,402 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:42,403 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet
+2025-11-17 13:39:42,683 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:42,683 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet
+2025-11-17 13:39:42,976 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:42,978 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet
+2025-11-17 13:39:43,266 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:43,267 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet
+2025-11-17 13:39:43,560 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:43,560 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet
+2025-11-17 13:39:43,817 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:43,817 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet
+2025-11-17 13:39:48,202 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:48,202 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet
+2025-11-17 13:39:48,431 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:48,432 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet
+2025-11-17 13:39:48,678 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:48,678 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet
+2025-11-17 13:39:48,907 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:48,908 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet
+2025-11-17 13:39:49,281 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:49,283 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet
+2025-11-17 13:39:49,619 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:49,619 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet
+2025-11-17 13:39:49,943 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:49,944 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet
+2025-11-17 13:39:50,190 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:50,191 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet
+2025-11-17 13:39:50,450 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:50,450 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet
+2025-11-17 13:39:50,749 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:50,750 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet
+2025-11-17 13:39:51,013 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:51,013 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet
+2025-11-17 13:39:51,315 - __main__ - WARNING - Error reading raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet: No match for FieldRef.Name(coi) in date: string
+time: string
+symbol: string
+open: double
+high: double
+low: double
+close: double
+volume: int64
+oi: int64
+__fragment_index: int32
+__batch_index: int32
+__last_in_fragment: bool
+__filename: string
+2025-11-17 13:39:51,317 - nautilus_validation.connectors - INFO - Database connection closed
+2025-11-17 13:39:51,317 - __main__ - ERROR - Unexpected error: No Parquet data could be read
+Traceback (most recent call last):
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 390, in main
+    result = perform_validation(args, config)
+  File "C:\validation_nautilus\nautilus_validation\cli.py", line 297, in perform_validation
+    raise ValueError("No Parquet data could be read")
+ValueError: No Parquet data could be read
+2025-11-17 13:40:53,924 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:40:54,612 - nautilus_validation.connectors - INFO - Successfully connected to DigitalOcean Spaces bucket: historical-db-tick
+2025-11-17 13:40:56,541 - nautilus_validation.connectors - INFO - Successfully connected to MySQL database: historicaldb
+2025-11-17 13:40:56,665 - nautilus_validation.connectors - INFO - Found 20 Parquet files with prefix 'raw/parquet_data/futures/banknifty/2024/01/'
+2025-11-17 13:40:57,825 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet
+2025-11-17 13:40:58,312 - nautilus_validation.connectors - INFO - Successfully read 10962 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_01012024.parquet
+2025-11-17 13:40:58,312 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet
+2025-11-17 13:40:58,591 - nautilus_validation.connectors - INFO - Successfully read 13163 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_02012024.parquet
+2025-11-17 13:40:58,592 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet
+2025-11-17 13:40:58,932 - nautilus_validation.connectors - INFO - Successfully read 15313 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_03012024.parquet
+2025-11-17 13:40:58,933 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet
+2025-11-17 13:40:59,258 - nautilus_validation.connectors - INFO - Successfully read 14260 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_04012024.parquet
+2025-11-17 13:40:59,258 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet
+2025-11-17 13:40:59,567 - nautilus_validation.connectors - INFO - Successfully read 13851 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_05012024.parquet
+2025-11-17 13:40:59,567 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet
+2025-11-17 13:40:59,907 - nautilus_validation.connectors - INFO - Successfully read 14476 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_08012024.parquet
+2025-11-17 13:40:59,908 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet
+2025-11-17 13:41:00,218 - nautilus_validation.connectors - INFO - Successfully read 13896 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_09012024.parquet
+2025-11-17 13:41:00,219 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet
+2025-11-17 13:41:00,468 - nautilus_validation.connectors - INFO - Successfully read 13499 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_10012024.parquet
+2025-11-17 13:41:00,469 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet
+2025-11-17 13:41:00,735 - nautilus_validation.connectors - INFO - Successfully read 12219 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_11012024.parquet
+2025-11-17 13:41:00,736 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet
+2025-11-17 13:41:01,001 - nautilus_validation.connectors - INFO - Successfully read 12596 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_12012024.parquet
+2025-11-17 13:41:01,001 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet
+2025-11-17 13:41:01,285 - nautilus_validation.connectors - INFO - Successfully read 11900 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_15012024.parquet
+2025-11-17 13:41:01,285 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet
+2025-11-17 13:41:01,564 - nautilus_validation.connectors - INFO - Successfully read 12779 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_16012024.parquet
+2025-11-17 13:41:01,565 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet
+2025-11-17 13:41:01,993 - nautilus_validation.connectors - INFO - Successfully read 18565 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_17012024.parquet
+2025-11-17 13:41:01,993 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet
+2025-11-17 13:41:02,390 - nautilus_validation.connectors - INFO - Successfully read 17200 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_18012024.parquet
+2025-11-17 13:41:02,391 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet
+2025-11-17 13:41:02,739 - nautilus_validation.connectors - INFO - Successfully read 15326 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_19012024.parquet
+2025-11-17 13:41:02,740 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet
+2025-11-17 13:41:03,011 - nautilus_validation.connectors - INFO - Successfully read 11981 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_20012024.parquet
+2025-11-17 13:41:03,012 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet
+2025-11-17 13:41:03,743 - nautilus_validation.connectors - INFO - Successfully read 14948 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_25012024.parquet
+2025-11-17 13:41:03,743 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet
+2025-11-17 13:41:04,064 - nautilus_validation.connectors - INFO - Successfully read 15884 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_29012024.parquet
+2025-11-17 13:41:04,064 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet
+2025-11-17 13:41:04,373 - nautilus_validation.connectors - INFO - Successfully read 14433 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_30012024.parquet
+2025-11-17 13:41:04,373 - nautilus_validation.connectors - INFO - Reading Parquet file: raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet
+2025-11-17 13:41:04,756 - nautilus_validation.connectors - INFO - Successfully read 17355 rows from raw/parquet_data/futures/banknifty/2024/01/banknifty_future_31012024.parquet
+2025-11-17 13:43:07,661 - nautilus_validation.connectors - INFO - Database connection closed
